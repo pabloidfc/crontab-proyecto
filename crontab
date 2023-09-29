@@ -1,0 +1,2 @@
+0 2 * * * mysqldump -usantiago.etchebarne -p43375773 project > /backup/mysqldump.sql
+
