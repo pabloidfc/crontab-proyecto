@@ -1,2 +1,3 @@
-0 2 * * * mysqldump -usantiago.etchebarne -p43375773 project > /backup/mysqldump.sql
-
+0 2 * * * backup_date=$(date +\%Y\%m\%d)
+mkdir -p /backup/$backup_date
+mysqldump -usantiago.etchebarne -p43375773 project > "/backup/$backup_date/mysqldump_$backup_date.sql"
